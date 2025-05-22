@@ -27,7 +27,8 @@ my_button = customtkinter.CTkButton(root,
     font=("Helvetica", 24),
     text_color="black",
     fg_color="red",
-    hover_color="green")
+    hover_color="green",
+    corner_radius=50)
 my_button.pack(pady=80)
 
 my_label = customtkinter.CTkLabel(root, text="")
