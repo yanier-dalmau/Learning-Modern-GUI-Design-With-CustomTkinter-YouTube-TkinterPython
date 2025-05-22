@@ -10,7 +10,7 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), da
 root = customtkinter.CTk()
 
 root.title('Tkinter.com - Custom Tkinter Buttons')
-root.geometry('600x350')
+root.geometry('700x450')
 
 # Verificar el sistema operativo
 if platform.system() == 'Windows':
@@ -23,6 +23,22 @@ else:
             'codemy.png')
         )
     )  # Usar icono PNG en otros sistemas operativos
+    
+def game():
+    my_label.configure(text="You clicked the thing!")
+
+check_var = customtkinter.StringVar(value="off")
+my_check = customtkinter.CTkCheckBox(root, 
+    text="Would you like to play a game?",
+    variable=check_var,
+    onvalue="on", 
+    offvalue="off",
+    command=game,
+)
+my_check.pack(pady=40)
+
+my_label = customtkinter.CTkLabel(root, text="")
+my_label.pack(pady=20)
 
 
 root.mainloop()
