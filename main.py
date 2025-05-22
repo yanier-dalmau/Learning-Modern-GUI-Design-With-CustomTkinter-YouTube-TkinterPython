@@ -31,7 +31,8 @@ my_button = customtkinter.CTkButton(root,
     corner_radius=50,
     bg_color="white",
     border_width=10,
-    border_color="yellow")
+    border_color="yellow",
+    state="disabled")
 my_button.pack(pady=80)
 
 my_label = customtkinter.CTkLabel(root, text="")
