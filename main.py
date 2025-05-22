@@ -19,7 +19,11 @@ root.iconphoto(True, icono)
 def hello():
     my_label.configure(text="Whatever")
 
-my_button = customtkinter.CTkButton(root, text="Hello World!!!", command=hello)
+my_button = customtkinter.CTkButton(root, 
+    text="Hello World!!!", 
+    command=hello,
+    height=100,
+    width=200)
 my_button.pack(pady=80)
 
 my_label = customtkinter.CTkLabel(root, text="")
