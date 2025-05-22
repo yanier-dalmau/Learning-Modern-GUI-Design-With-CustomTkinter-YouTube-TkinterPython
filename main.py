@@ -26,8 +26,10 @@ else:
     
 def submit():
     my_label.configure(text=f'Hello {my_entry.get()}')
+    my_entry.configure(state="disabled")
 
 def clear():
+    my_entry.configure(state="normal")
     my_entry.delete(0, END)
 
 my_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 24))
