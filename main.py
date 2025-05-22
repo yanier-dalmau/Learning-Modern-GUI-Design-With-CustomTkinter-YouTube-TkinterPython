@@ -34,7 +34,8 @@ my_entry = customtkinter.CTkEntry(
     root, 
     placeholder_text="Enter you Name",
     height=50,
-    width=200
+    width=200,
+    font=("Helvetica", 18)
 )
 my_entry.pack(pady=20)
 
