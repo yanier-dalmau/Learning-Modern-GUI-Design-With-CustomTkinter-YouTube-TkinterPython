@@ -23,7 +23,8 @@ my_button = customtkinter.CTkButton(root,
     text="Hello World!!!", 
     command=hello,
     height=100,
-    width=200)
+    width=200,
+    font=("Helvetica", 24))
 my_button.pack(pady=80)
 
 my_label = customtkinter.CTkLabel(root, text="")
