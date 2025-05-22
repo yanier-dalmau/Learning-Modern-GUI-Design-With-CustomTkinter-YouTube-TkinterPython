@@ -42,7 +42,8 @@ my_entry = customtkinter.CTkEntry(
     corner_radius=50,
     text_color="green",
     placeholder_text_color="darkblue",
-    fg_color=("blue", "lightblue") # outer, inner
+    fg_color=("blue", "lightblue"), # outer, inner
+    state="normal"
 )
 my_entry.pack(pady=20)
 
