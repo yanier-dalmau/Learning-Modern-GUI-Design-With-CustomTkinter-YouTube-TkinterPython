@@ -17,7 +17,7 @@ icono = PhotoImage(file=icon_path)   # Cargar el icono en formato PNG
 root.iconphoto(True, icono)
 
 def hello():
-    my_label.configure(text="Whatever")
+    my_label.configure(text=my_button.cget("text"))
 
 my_button = customtkinter.CTkButton(root, 
     text="Hello World!!!", 
