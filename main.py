@@ -23,5 +23,17 @@ else:
             'codemy.png')
         )
     )  # Usar icono PNG en otros sistemas operativos
+    
+def submit():
+    pass
+
+my_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 24))
+my_label.pack(pady=40)
+
+my_entry = customtkinter.CTkEntry(root, placeholder_text="Enter you Name")
+my_entry.pack(pady=20)
+
+my_button = customtkinter.CTkButton(root, text="Submit", command=submit)
+my_button.pack(pady=10)
 
 root.mainloop()
