@@ -14,10 +14,13 @@ root.geometry('600x350')
 
 
 def hello():
-    pass
+    my_label.configure(text = "Whatever")
 
 # Use CTkButton instead of tkinter Button
-my_button = customtkinter.CTkButton(root, text="Hello World!!!", command=hello)
+my_button = customtkinter.CTkButton(root, text = "Hello World!!!", command = hello)
 my_button.pack(pady = 80)
+
+my_label = customtkinter.CTkLabel(root, text = "")
+my_label.pack(pady = 20)
 
 root.mainloop()
