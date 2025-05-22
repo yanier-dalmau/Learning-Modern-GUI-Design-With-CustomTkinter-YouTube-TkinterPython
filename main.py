@@ -1,4 +1,5 @@
 import os
+import platform
 from tkinter import *
 import customtkinter
 
@@ -11,9 +12,16 @@ root = customtkinter.CTk()
 root.title('Tkinter.com - Custom Tkinter Buttons')
 root.geometry('600x350')
 
-icon_path = os.path.join(os.path.dirname(__file__), 'images', 'codemy.png')   # Construir ruta absoluta al archivo codemy.png
-icono = PhotoImage(file=icon_path)   # Cargar el icono en formato PNG
-
-root.iconphoto(True, icono)
+# Verificar el sistema operativo
+if platform.system() == 'Windows':
+    root.iconbitmap('images/codemy.ico')  # Usar icono ICO en Windows
+else:
+    root.iconphoto(True, 
+        PhotoImage(
+            file=os.path.join(os.path.dirname(__file__), 
+            'images', 
+            'codemy.png')
+        )
+    )  # Usar icono PNG en otros sistemas operativos
 
 root.mainloop()
