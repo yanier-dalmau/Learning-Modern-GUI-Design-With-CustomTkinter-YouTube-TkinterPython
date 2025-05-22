@@ -25,7 +25,8 @@ my_button = customtkinter.CTkButton(root,
     height=100,
     width=200,
     font=("Helvetica", 24),
-    text_color="black")
+    text_color="black",
+    fg_color="red")
 my_button.pack(pady=80)
 
 my_label = customtkinter.CTkLabel(root, text="")
