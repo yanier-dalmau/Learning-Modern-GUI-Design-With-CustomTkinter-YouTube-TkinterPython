@@ -38,7 +38,8 @@ my_entry = customtkinter.CTkEntry(
     font=("Helvetica", 18),
     corner_radius=50,
     text_color="green",
-    placeholder_text_color="blue"
+    placeholder_text_color="darkblue",
+    fg_color=("blue", "lightblue") # outer, inner
 )
 my_entry.pack(pady=20)
 
