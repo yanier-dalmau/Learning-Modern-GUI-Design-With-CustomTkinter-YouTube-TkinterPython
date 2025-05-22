@@ -36,7 +36,8 @@ my_entry = customtkinter.CTkEntry(
     height=50,
     width=200,
     font=("Helvetica", 18),
-    corner_radius=50
+    corner_radius=50,
+    text_color="green"
 )
 my_entry.pack(pady=20)
 
