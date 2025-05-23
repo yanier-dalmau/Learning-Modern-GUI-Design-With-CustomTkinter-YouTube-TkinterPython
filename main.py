@@ -29,11 +29,18 @@ def game():
         my_label.configure(text="You clicked the thing!")
     else:
         my_label.configure(text="You didn't clicked the thing!")
-        
+    
+    text_var.set("Awesome!!")
+            
 def clear_me():
     my_check.deselect()
+    text_var.set("Would you like to play a game?")
     
+# Checkbox state    
 check_var = customtkinter.StringVar(value="off")
+# Checkbox text
+text_var = customtkinter.StringVar(value="Would you like to play a game?")
+
 my_check = customtkinter.CTkCheckBox(root, 
     text="Would you like to play a game?",
     variable=check_var,
@@ -46,7 +53,8 @@ my_check = customtkinter.CTkCheckBox(root,
     fg_color="red",
     hover_color="green",
     text_color="red",
-    hover=False
+    hover=False,
+    textvariable=text_var
 )
 my_check.pack(pady=40)
 
