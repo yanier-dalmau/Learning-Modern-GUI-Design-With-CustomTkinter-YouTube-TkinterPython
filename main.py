@@ -47,7 +47,8 @@ colors = ["Red", "Green", "Blue"]
 my_combo = customtkinter.CTkComboBox(root, 
     values=colors,
     height=50,
-    width=200
+    width=200,
+    font=("Helvetica", 18)
 )
 my_combo.pack(pady=0)
 
