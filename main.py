@@ -61,7 +61,7 @@ my_combo = customtkinter.CTkComboBox(root,
     text_color="silver",
     hover = True,
     justify="center",
-    state="disabled" # normal
+    state="normal" # normal
 )
 my_combo.pack(pady=0)
 
