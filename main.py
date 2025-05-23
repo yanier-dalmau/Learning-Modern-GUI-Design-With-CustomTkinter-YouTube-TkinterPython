@@ -24,13 +24,21 @@ else:
         )
     )  # Usar icono PNG en otros sistemas operativos
 
+
+def color_picker(choice):
+    output_label.configure(text=choice)
+
+
 my_label = customtkinter.CTkLabel(root, text="Pick a color", font=("Helvetica", 18))
 my_label.pack(pady=40)
 
 # Set the options for our combobox 
 colors = ["Red", "Green", "Blue"]
 # Create combobox
-my_combo = customtkinter.CTkComboBox(root, values=colors)
-my_combo.pack(pady=20)
+my_combo = customtkinter.CTkComboBox(root, values=colors, command=color_picker)
+my_combo.pack(pady=0)
+
+output_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 18))
+output_label.pack(pady=20)
 
 root.mainloop()
