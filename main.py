@@ -10,7 +10,7 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), da
 root = customtkinter.CTk()
 
 root.title('Tkinter.com - Custom Tkinter Buttons')
-root.geometry('700x450')
+root.geometry('600x350')
 
 # Verificar el sistema operativo
 if platform.system() == 'Windows':
@@ -23,56 +23,6 @@ else:
             'codemy.png')
         )
     )  # Usar icono PNG en otros sistemas operativos
-    
-def game():
-    if check_var.get() == "on":
-        my_label.configure(text="You clicked the thing!")
-    else:
-        my_label.configure(text="You didn't clicked the thing!")
-    
-    text_var.set("Awesome!!")
-            
-def clear_me():
-    my_check.deselect()
-    text_var.set("Would you like to play a game?")
-    
-# Checkbox state    
-check_var = customtkinter.StringVar(value="off")
-# Checkbox text
-text_var = customtkinter.StringVar(value="Would you like to play a game?")
-
-my_check = customtkinter.CTkCheckBox(root, 
-    text="Would you like to play a game?",
-    variable=check_var,
-    onvalue="on", 
-    offvalue="off",
-    checkbox_width=50,
-    checkbox_height=50,
-    font=("Helvetica", 18),
-    corner_radius=90,
-    fg_color="red",
-    hover_color="green",
-    text_color="red",
-    hover=False,
-    textvariable=text_var
-)
-my_check.pack(pady=40)
-
-
-my_button = customtkinter.CTkButton(root, text="Submit", command=game)
-my_button.pack(pady=20)
-
-clear_button = customtkinter.CTkButton(root, text="Clear", command=clear_me)
-clear_button.pack(pady=10)
-
-toogle_button = customtkinter.CTkButton(root, text="Toogle", command=my_check.toggle)
-toogle_button.pack(pady=10)
-
-select_button = customtkinter.CTkButton(root, text="Select", command=my_check.select)
-select_button.pack(pady=10)
-
-my_label = customtkinter.CTkLabel(root, text="")
-my_label.pack(pady=20)
 
 
 root.mainloop()
