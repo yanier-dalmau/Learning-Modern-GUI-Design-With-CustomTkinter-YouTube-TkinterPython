@@ -50,6 +50,7 @@ my_combo = customtkinter.CTkComboBox(root,
     width=200,
     font=("Helvetica", 18),
     dropdown_font=("Helvetica", 18),
+    corner_radius=50
 )
 my_combo.pack(pady=0)
 
