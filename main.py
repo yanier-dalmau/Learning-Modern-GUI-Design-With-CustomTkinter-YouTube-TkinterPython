@@ -55,7 +55,8 @@ my_combo = customtkinter.CTkComboBox(root,
     border_color="red",
     button_color="red",
     button_hover_color="green",
-    dropdown_hover_color="green"
+    dropdown_hover_color="green",
+    dropdown_fg_color="blue"
 )
 my_combo.pack(pady=0)
 
