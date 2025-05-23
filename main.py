@@ -41,7 +41,8 @@ my_check = customtkinter.CTkCheckBox(root,
     offvalue="off",
     checkbox_width=50,
     checkbox_height=50,
-    font=("Helvetica", 18)
+    font=("Helvetica", 18),
+    corner_radius=90
 )
 my_check.pack(pady=40)
 
