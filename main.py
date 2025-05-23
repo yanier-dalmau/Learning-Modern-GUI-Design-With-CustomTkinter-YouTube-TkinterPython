@@ -26,7 +26,7 @@ else:
 
 
 def color_picker(choice):
-    output_label.configure(text=choice)
+    output_label.configure(text=choice, text_color=choice)
 
 
 my_label = customtkinter.CTkLabel(root, text="Pick a color", font=("Helvetica", 18))
