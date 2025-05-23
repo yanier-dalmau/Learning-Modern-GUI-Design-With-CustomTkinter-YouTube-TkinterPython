@@ -30,6 +30,8 @@ def game():
     else:
         my_label.configure(text="You didn't clicked the thing!")
         
+def clear_me():
+    my_check.deselect()
     
 check_var = customtkinter.StringVar(value="off")
 my_check = customtkinter.CTkCheckBox(root, 
@@ -43,6 +45,9 @@ my_check.pack(pady=40)
 
 my_button = customtkinter.CTkButton(root, text="Submit", command=game)
 my_button.pack(pady=20)
+
+clear_button = customtkinter.CTkButton(root, text="Clear", command=clear_me)
+clear_button.pack(pady=10)
 
 my_label = customtkinter.CTkLabel(root, text="")
 my_label.pack(pady=20)
