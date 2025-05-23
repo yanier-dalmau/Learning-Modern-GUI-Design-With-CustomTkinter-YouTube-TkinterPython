@@ -44,7 +44,8 @@ my_check = customtkinter.CTkCheckBox(root,
     font=("Helvetica", 18),
     corner_radius=90,
     fg_color="red",
-    hover_color="green"
+    hover_color="green",
+    text_color="red"
 )
 my_check.pack(pady=40)
 
