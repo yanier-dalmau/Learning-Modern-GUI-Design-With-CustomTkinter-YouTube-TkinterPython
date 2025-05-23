@@ -30,6 +30,13 @@ def color_picker(choice):
 
 def color_picker2():
     output_label.configure(text=my_combo.get(), text_color=my_combo.get())
+    
+def color_picker_yellow():
+    # Set de combo box option
+    my_combo.set("Yellow")
+    output_label.configure(text=my_combo.get(), text_color=my_combo.get())
+
+
 
 my_label = customtkinter.CTkLabel(root, text="Pick a color", font=("Helvetica", 18))
 my_label.pack(pady=40)
@@ -43,6 +50,10 @@ my_combo.pack(pady=0)
 # Create a button
 my_button = customtkinter.CTkButton(root, text="Pick a color", command=color_picker2)
 my_button.pack(pady=20)
+
+# Yellow button
+yellow_button = customtkinter.CTkButton(root, text="Pick yellow!", command=color_picker_yellow)
+yellow_button.pack(pady=20)
 
 # Create output label
 output_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 18))
