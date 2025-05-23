@@ -32,10 +32,12 @@ my_check = customtkinter.CTkCheckBox(root,
     text="Would you like to play a game?",
     variable=check_var,
     onvalue="on", 
-    offvalue="off",
-    command=game,
+    offvalue="off"
 )
 my_check.pack(pady=40)
+
+my_button = customtkinter.CTkButton(root, text="Submit", command=game)
+my_button.pack(pady=20)
 
 my_label = customtkinter.CTkLabel(root, text="")
 my_label.pack(pady=20)
