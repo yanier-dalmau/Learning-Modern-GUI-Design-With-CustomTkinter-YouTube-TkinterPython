@@ -49,6 +49,9 @@ my_button.pack(pady=20)
 clear_button = customtkinter.CTkButton(root, text="Clear", command=clear_me)
 clear_button.pack(pady=10)
 
+toogle_button = customtkinter.CTkButton(root, text="Toogle", command=my_check.toggle)
+toogle_button.pack(pady=10)
+
 my_label = customtkinter.CTkLabel(root, text="")
 my_label.pack(pady=20)
 
