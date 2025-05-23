@@ -38,7 +38,9 @@ my_check = customtkinter.CTkCheckBox(root,
     text="Would you like to play a game?",
     variable=check_var,
     onvalue="on", 
-    offvalue="off"
+    offvalue="off",
+    checkbox_width=50,
+    checkbox_height=50
 )
 my_check.pack(pady=40)
 
