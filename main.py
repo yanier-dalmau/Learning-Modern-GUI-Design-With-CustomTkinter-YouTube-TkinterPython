@@ -44,7 +44,11 @@ my_label.pack(pady=40)
 # Set the options for our combobox 
 colors = ["Red", "Green", "Blue"]
 # Create combobox
-my_combo = customtkinter.CTkComboBox(root, values=colors)
+my_combo = customtkinter.CTkComboBox(root, 
+    values=colors,
+    height=50,
+    width=200
+)
 my_combo.pack(pady=0)
 
 # Create a button
