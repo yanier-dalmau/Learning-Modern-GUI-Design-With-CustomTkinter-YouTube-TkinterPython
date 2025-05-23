@@ -48,7 +48,8 @@ my_combo = customtkinter.CTkComboBox(root,
     values=colors,
     height=50,
     width=200,
-    font=("Helvetica", 18)
+    font=("Helvetica", 18),
+    dropdown_font=("Helvetica", 18),
 )
 my_combo.pack(pady=0)
 
