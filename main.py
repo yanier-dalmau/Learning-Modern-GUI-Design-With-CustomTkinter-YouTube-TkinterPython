@@ -25,7 +25,20 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
-my_progressbar = customtkinter.CTkProgressBar(root, orientation="vertical")
+def clicker():
+    my_progressbar.step()
+
+my_progressbar = customtkinter.CTkProgressBar(root, orientation="horizontal")
 my_progressbar.pack(pady=40)
+
+# Set the default progess starting point
+my_progressbar.set(0)
+
+my_button = customtkinter.CTkButton(root, text="Click me", command=clicker)
+my_button.pack(pady=10)
+
+my_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 18))
+my_label.pack(pady=10)
+
 
 root.mainloop()
