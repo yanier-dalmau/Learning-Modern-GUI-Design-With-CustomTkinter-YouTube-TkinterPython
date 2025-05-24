@@ -38,8 +38,10 @@ def stop():
 
 
 my_progressbar = customtkinter.CTkProgressBar(root, 
+    width=300,
+    height=50,                                              
     orientation="horizontal",
-    mode="indeterminate",
+    mode="determinate",
     determinate_speed=5,
     indeterminate_speed=5,
 )
