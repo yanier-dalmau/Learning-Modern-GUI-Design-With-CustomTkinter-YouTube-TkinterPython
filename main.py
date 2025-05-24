@@ -33,11 +33,14 @@ my_label.pack(pady=40)
 
 radio_var = customtkinter.StringVar(value="other")
 # Radio Button 1
-my_rad1 = customtkinter.CTkRadioButton(root, text="Yes I Do", value= "Yes", variable=radio_var, command=get_rad)
+my_rad1 = customtkinter.CTkRadioButton(root, text="Yes I Do", value= "Yes", variable=radio_var)
 my_rad1.pack(pady=10)
 # Radio Button 2
-my_rad2 = customtkinter.CTkRadioButton(root, text="No I Don't", value= "No", variable=radio_var, command=get_rad)
+my_rad2 = customtkinter.CTkRadioButton(root, text="No I Don't", value= "No", variable=radio_var)
 my_rad2.pack(pady=10)
+
+my_button = customtkinter.CTkButton(root, text="Select", command=get_rad)
+my_button.pack(pady=10)
 
 my_label2 = customtkinter.CTkLabel(root, text="", font=("Helvetica", 18))
 my_label2.pack(pady=10)
