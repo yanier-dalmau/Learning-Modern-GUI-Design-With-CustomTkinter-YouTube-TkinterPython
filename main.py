@@ -27,7 +27,7 @@ else:
 
 def clicker():
     my_progressbar.step()
-    my_label.configure(text=(my_progressbar.get()*100))
+    my_label.configure(text=(int(my_progressbar.get()*100)))
 
 my_progressbar = customtkinter.CTkProgressBar(root, orientation="horizontal")
 my_progressbar.pack(pady=40)
