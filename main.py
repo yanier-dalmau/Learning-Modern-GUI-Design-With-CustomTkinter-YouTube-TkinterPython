@@ -44,8 +44,10 @@ my_rad1 = customtkinter.CTkRadioButton(root,
     text="Yes I Do", 
     value= "Yes", 
     variable=radio_var,
-    width=50,
-    height=50,
+    # width=50,
+    # height=50,
+    radiobutton_width=50,
+    radiobutton_height=50,
 )
 my_rad1.pack(pady=10)
 # Radio Button 2
