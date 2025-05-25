@@ -27,7 +27,7 @@ else:
 
 # Create our function
 def clicker(value):
-    pass
+    my_label.configure(text=f'Hello {value}')
 
 # Our button values
 my_values = ["Jhon", "April", "Wes"]
@@ -38,5 +38,8 @@ my_seg_button.pack(pady=40)
 # Set deafult Selection
 my_seg_button.set("Jhon")
 
+# Label
+my_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 18))
+my_label.pack(pady=20)
 
 root.mainloop()
