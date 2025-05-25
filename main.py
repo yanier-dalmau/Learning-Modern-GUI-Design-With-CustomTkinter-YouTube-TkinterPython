@@ -25,8 +25,13 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+
 def get_rad():
-    my_label2.configure(text=radio_var.get())
+    if radio_var.get() == "Yes":
+        my_label2.configure(text="Of Course You Like Pizza!")
+    else:
+        my_label2.configure(text="What's Wrong With You?!")
+
 
 my_label = customtkinter.CTkLabel(root, text="Do you like Pizza?!", font=("Helvetica", 18))
 my_label.pack(pady=40)
