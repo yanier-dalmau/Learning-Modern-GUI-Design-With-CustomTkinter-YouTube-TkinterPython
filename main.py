@@ -35,4 +35,8 @@ my_values = ["Jhon", "April", "Wes"]
 my_seg_button = customtkinter.CTkSegmentedButton(root, values=my_values, command=clicker)
 my_seg_button.pack(pady=40)
 
+# Set deafult Selection
+my_seg_button.set("Jhon")
+
+
 root.mainloop()
