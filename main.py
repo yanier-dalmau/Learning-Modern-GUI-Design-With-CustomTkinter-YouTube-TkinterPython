@@ -25,4 +25,17 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+
+def sliding(value):
+    pass
+
+
+my_slider = customtkinter.CTkSlider(root, 
+    from_=0,
+    to=100,
+    command=sliding,
+)
+my_slider.pack(pady=40)
+
+
 root.mainloop()
