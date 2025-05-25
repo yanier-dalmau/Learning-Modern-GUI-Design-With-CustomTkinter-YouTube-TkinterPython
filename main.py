@@ -36,7 +36,7 @@ my_seg_button = customtkinter.CTkSegmentedButton(root, values=my_values, command
 my_seg_button.pack(pady=40)
 
 # Set deafult Selection
-my_seg_button.set("Jhon")
+# my_seg_button.set("Jhon")
 
 # Label
 my_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 18))
