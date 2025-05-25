@@ -30,6 +30,7 @@ my_frame = customtkinter.CTkScrollableFrame(root,
     orientation="vertical",
     width=300,
     height=200,
+    label_text="Hello World!",
     
 )
 my_frame.pack(pady=40)
