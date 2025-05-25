@@ -32,6 +32,6 @@ my_frame = customtkinter.CTkScrollableFrame(root,
 my_frame.pack(pady=40)
 
 for x in range(20):
-    customtkinter.CTkButton(my_frame, text="This is a button!!").pack(pady=10)
+    customtkinter.CTkButton(my_frame, text="This is a button!!", font=("Helvetica", 100)).pack(pady=10)
 
 root.mainloop()
