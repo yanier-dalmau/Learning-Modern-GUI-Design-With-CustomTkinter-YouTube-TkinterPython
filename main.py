@@ -54,7 +54,8 @@ my_rad1 = customtkinter.CTkRadioButton(root,
     border_color="red",
     hover_color="pink",
     fg_color="green",
-    hover=False,
+    hover=True,
+    text_color="red",
 )
 my_rad1.pack(pady=10)
 # Radio Button 2
