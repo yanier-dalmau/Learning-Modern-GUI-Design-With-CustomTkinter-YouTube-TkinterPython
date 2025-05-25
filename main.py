@@ -37,6 +37,7 @@ my_frame = customtkinter.CTkScrollableFrame(root,
     label_anchor="center", # "w", "n", "ne", "e", "se", "s", "sw", "w", "nw", center
     border_width=3,
     border_color="green",
+    fg_color="red",
 )
 my_frame.pack(pady=40)
 
