@@ -26,7 +26,9 @@ else:
 
 
 # Create a scrollable frame
-my_frame = customtkinter.CTkScrollableFrame(root)
+my_frame = customtkinter.CTkScrollableFrame(root,
+    orientation="horizontal",
+)
 my_frame.pack(pady=40)
 
 for x in range(20):
