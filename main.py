@@ -41,6 +41,7 @@ my_frame = customtkinter.CTkScrollableFrame(root,
     scrollbar_fg_color="yellow",
     scrollbar_button_color="pink",
     scrollbar_button_hover_color="blue",
+    corner_radius=20,
 )
 my_frame.pack(pady=40)
 
