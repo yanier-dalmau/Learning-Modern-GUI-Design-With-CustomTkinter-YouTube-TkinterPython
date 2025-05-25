@@ -25,4 +25,14 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+# Create our function
+def clicker(value):
+    pass
+
+# Our button values
+my_values = ["Jhon", "April", "Wes"]
+# Create the button
+my_seg_button = customtkinter.CTkSegmentedButton(root, values=my_values, command=clicker)
+my_seg_button.pack(pady=40)
+
 root.mainloop()
