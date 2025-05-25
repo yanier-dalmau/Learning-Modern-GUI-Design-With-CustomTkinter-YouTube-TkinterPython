@@ -32,7 +32,12 @@ def clicker(value):
 # Our button values
 my_values = ["Jhon", "April", "Wes"]
 # Create the button
-my_seg_button = customtkinter.CTkSegmentedButton(root, values=my_values, command=clicker)
+my_seg_button = customtkinter.CTkSegmentedButton(root, 
+    values=my_values, 
+    command=clicker,
+    width=300,
+    height=100,
+)
 my_seg_button.pack(pady=40)
 
 # Set deafult Selection
