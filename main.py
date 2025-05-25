@@ -10,7 +10,7 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), da
 root = customtkinter.CTk()
 
 root.title('Tkinter.com - Custom Tkinter Buttons')
-root.geometry('600x350')
+root.geometry('700x350')
 
 # Verificar el sistema operativo
 if platform.system() == 'Windows':
@@ -24,5 +24,12 @@ else:
         )
     )  # Usar icono PNG en otros sistemas operativos
 
+
+# Create a scrollable frame
+my_frame = customtkinter.CTkScrollableFrame(root)
+my_frame.pack(pady=40)
+
+for x in range(20):
+    customtkinter.CTkButton(my_frame, text="This is a button!!").pack(pady=10)
 
 root.mainloop()
