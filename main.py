@@ -38,6 +38,7 @@ my_seg_button = customtkinter.CTkSegmentedButton(root,
     width=300,
     height=100,
     font=("Helvetica", 18),
+    corner_radius=50,
 )
 my_seg_button.pack(pady=40)
 
