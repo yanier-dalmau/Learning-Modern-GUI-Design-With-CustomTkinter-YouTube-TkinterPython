@@ -27,7 +27,7 @@ else:
 
 # Create our function
 def clicker(value):
-    my_label.configure(text=f'Hello {my_seg_button.get()}')
+    my_label.configure(text=f'Hello {value}')
 
 # Our button values
 my_values = ["Jhon", "April", "Wes"]
