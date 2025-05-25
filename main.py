@@ -40,7 +40,13 @@ my_label.pack(pady=40)
 
 radio_var = customtkinter.StringVar(value="other")
 # Radio Button 1
-my_rad1 = customtkinter.CTkRadioButton(root, text="Yes I Do", value= "Yes", variable=radio_var)
+my_rad1 = customtkinter.CTkRadioButton(root, 
+    text="Yes I Do", 
+    value= "Yes", 
+    variable=radio_var,
+    width=50,
+    height=50,
+)
 my_rad1.pack(pady=10)
 # Radio Button 2
 my_rad2 = customtkinter.CTkRadioButton(root, text="No I Don't", value= "No", variable=radio_var)
