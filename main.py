@@ -27,7 +27,9 @@ else:
 
 
 def get_rad():
-    if radio_var.get() == "Yes":
+    if radio_var.get() == "other":
+        my_label2.configure(text="Please Make a Selection")
+    elif radio_var.get() == "Yes":
         my_label2.configure(text="Of Course You Like Pizza!")
     else:
         my_label2.configure(text="What's Wrong With You?!")
