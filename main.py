@@ -43,6 +43,7 @@ my_seg_button = customtkinter.CTkSegmentedButton(root,
     fg_color="red",
     selected_color="green",
     selected_hover_color="purple",
+    unselected_color="pink",
 )
 my_seg_button.pack(pady=40)
 
