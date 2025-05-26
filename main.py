@@ -27,7 +27,7 @@ else:
 
 # Funtion
 def sliding(value):
-    pass
+    my_label.configure(text=value)
 
 
 my_slider = customtkinter.CTkSlider(root, 
@@ -39,5 +39,9 @@ my_slider.pack(pady=40)
 
 # Define starting point
 my_slider.set(0)
+
+my_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 18))
+my_label.pack(pady=20)
+
 
 root.mainloop()
