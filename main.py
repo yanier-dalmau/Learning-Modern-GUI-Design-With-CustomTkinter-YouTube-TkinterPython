@@ -34,6 +34,7 @@ my_slider = customtkinter.CTkSlider(root,
     from_=0,
     to=100,
     command=sliding,
+    orientation="vertical",
 )
 my_slider.pack(pady=40)
 
