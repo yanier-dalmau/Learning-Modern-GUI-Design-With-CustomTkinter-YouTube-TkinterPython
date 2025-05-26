@@ -31,7 +31,9 @@ def switcher():
 
 # Create toggle function
 def clicker():
-    my_switch.deselect()
+    # my_switch.deselect()
+    my_switch.select()
+    
 
 # Create a StringVar
 switch_var = customtkinter.StringVar(value="on")
