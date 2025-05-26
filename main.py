@@ -25,4 +25,9 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+# Create Tabview
+my_tab = customtkinter.CTkTabview(root, )
+my_tab.pack(pady=10)
+
+
 root.mainloop()
