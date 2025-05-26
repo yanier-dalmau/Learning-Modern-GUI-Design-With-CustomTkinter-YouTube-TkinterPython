@@ -57,6 +57,7 @@ my_switch = customtkinter.CTkSwitch(root,
     button_color="pink",
     button_hover_color="yellow",
     font=("Helvetica", 24),
+    text_color="blue",
 )
 my_switch.pack(pady=40)
 
