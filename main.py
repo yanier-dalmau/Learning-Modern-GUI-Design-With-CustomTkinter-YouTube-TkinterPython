@@ -33,5 +33,8 @@ my_tab.pack(pady=10)
 tab_1 = my_tab.add("Tab 1")
 tab_2 = my_tab.add("Tab 2")
 
+# Put stuff in tabs
+my_button = customtkinter.CTkButton(tab_1)
+my_button.pack(pady=40)
 
 root.mainloop()
