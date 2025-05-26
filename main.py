@@ -24,17 +24,21 @@ else:
         )
     )  # Usar icono PNG en otros sistemas operativos
 
-
+thing = ''
 
 # Functions
 def delete():
-    pass
+    my_text.delete(0.0, 'end')
 
 def copy():
-    pass
+    global thing
+    thing = my_text.get(0.0, 'end')
 
 def paste():
-    pass
+    if thing:
+        my_text.insert('end', thing)
+    else:
+        my_text.insert('end', 'There is nothing to paste!')
 
 
 my_text = customtkinter.CTkTextbox(root)
