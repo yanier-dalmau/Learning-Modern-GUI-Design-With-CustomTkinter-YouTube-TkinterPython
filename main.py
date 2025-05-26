@@ -54,6 +54,7 @@ my_text = customtkinter.CTkTextbox(root,
     wrap="word", # char (default), word, none
     activate_scrollbars=True,
     scrollbar_button_color="#003660",
+    scrollbar_button_hover_color="red",
 )
 my_text.pack(pady=20)
 
