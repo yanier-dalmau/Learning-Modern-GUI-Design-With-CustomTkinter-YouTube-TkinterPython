@@ -29,6 +29,10 @@ else:
 def switcher():
     my_label.configure(text=switch_var.get())
 
+# Create toggle function
+def clicker():
+    my_switch.deselect()
+
 # Create a StringVar
 switch_var = customtkinter.StringVar(value="on")
 # Create Switch
@@ -44,5 +48,9 @@ my_switch.pack(pady=40)
 # Create a label
 my_label = customtkinter.CTkLabel(root, text="")
 my_label.pack(pady=10)
+
+# Create a button
+my_button = customtkinter.CTkButton(root, text="Click Me!", command=clicker)
+my_button.pack(pady=10)
 
 root.mainloop()
