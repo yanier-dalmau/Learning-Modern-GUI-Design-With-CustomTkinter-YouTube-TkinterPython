@@ -40,7 +40,7 @@ my_slider.pack(pady=40)
 # Define starting point
 my_slider.set(0)
 
-my_label = customtkinter.CTkLabel(root, text="", font=("Helvetica", 18))
+my_label = customtkinter.CTkLabel(root, text=my_slider.get(), font=("Helvetica", 18))
 my_label.pack(pady=20)
 
 
