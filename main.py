@@ -26,7 +26,30 @@ else:
 
 
 
+# Functions
+def delete():
+    pass
+
+def copy():
+    pass
+
+def paste():
+    pass
+
+
 my_text = customtkinter.CTkTextbox(root)
 my_text.pack(pady=20)
+
+my_fame = customtkinter.CTkFrame(root)
+my_fame.pack(pady=10)
+
+delete_button = customtkinter.CTkButton(my_fame, text="Delete", command=delete)
+copy_button = customtkinter.CTkButton(my_fame, text="Copy", command=copy)
+paste_button = customtkinter.CTkButton(my_fame, text="Paste", command=paste)
+
+delete_button.grid(row=0, column=0)
+copy_button.grid(row=0, column=1)
+paste_button.grid(row=0, column=2)
+
 
 root.mainloop()
