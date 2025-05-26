@@ -47,6 +47,7 @@ my_text = customtkinter.CTkTextbox(root,
     corner_radius=20,
     border_width=10,
     border_color="#003660",
+    border_spacing=20,
 )
 my_text.pack(pady=20)
 
