@@ -25,7 +25,7 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
-
+# Funtion
 def sliding(value):
     pass
 
@@ -37,5 +37,7 @@ my_slider = customtkinter.CTkSlider(root,
 )
 my_slider.pack(pady=40)
 
+# Define starting point
+my_slider.set(0)
 
 root.mainloop()
