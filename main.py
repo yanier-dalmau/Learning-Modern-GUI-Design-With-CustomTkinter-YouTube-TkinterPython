@@ -41,6 +41,7 @@ my_slider = customtkinter.CTkSlider(root,
     # border_width=10,
     fg_color="red",
     progress_color="green",
+    button_color="yellow",
 )
 my_slider.pack(pady=40)
 
