@@ -53,6 +53,7 @@ my_switch = customtkinter.CTkSwitch(root,
     border_color="orange",
     border_width=5,
     fg_color="red",
+    progress_color="green",
 )
 my_switch.pack(pady=40)
 
