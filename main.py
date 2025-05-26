@@ -27,7 +27,7 @@ else:
 
 # Funtion
 def sliding(value):
-    my_label.configure(text=value)
+    my_label.configure(text=int(value))
 
 
 my_slider = customtkinter.CTkSlider(root, 
