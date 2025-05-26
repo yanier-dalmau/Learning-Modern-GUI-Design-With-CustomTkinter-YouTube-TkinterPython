@@ -51,6 +51,7 @@ my_switch = customtkinter.CTkSwitch(root,
     switch_height=25,
     # corner_radius=15,
     border_color="orange",
+    border_width=5,
 )
 my_switch.pack(pady=40)
 
