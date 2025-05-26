@@ -44,6 +44,7 @@ my_tab = customtkinter.CTkTabview(root,
     text_color="red",
     state="normal",
     command=clicker,
+    anchor="w",
 )
 my_tab.pack(pady=10)
 
