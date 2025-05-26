@@ -25,35 +25,4 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
-
-def clicker():
-    my_button.configure(text="You Clicked The Tab Button")
-
-
-# Create Tabview
-my_tab = customtkinter.CTkTabview(root, 
-    width=600,
-    height=250,
-    corner_radius=10,
-    fg_color="silver",
-    segmented_button_fg_color="red",
-    segmented_button_selected_color="green",
-    segmented_button_selected_hover_color="pink",
-    segmented_button_unselected_hover_color="purple",
-    segmented_button_unselected_color="yellow",
-    text_color="red",
-    state="normal",
-    command=clicker,
-    anchor="w",
-)
-my_tab.pack(pady=10)
-
-# Create tabs
-tab_1 = my_tab.add("Tab 1")
-tab_2 = my_tab.add("Tab 2")
-
-# Put stuff in tabs
-my_button = customtkinter.CTkButton(tab_1)
-my_button.pack(pady=40)
-
 root.mainloop()
