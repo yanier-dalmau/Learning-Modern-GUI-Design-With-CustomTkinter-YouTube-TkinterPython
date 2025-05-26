@@ -45,8 +45,10 @@ my_switch = customtkinter.CTkSwitch(root,
     variable=switch_var,
     onvalue="on",
     offvalue="off",
-    width=200,
-    height=100,
+    # width=200,
+    # height=100,
+    switch_width=200,
+    switch_height=100,
 )
 my_switch.pack(pady=40)
 
