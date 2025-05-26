@@ -51,6 +51,7 @@ my_text = customtkinter.CTkTextbox(root,
     fg_color="silver",
     text_color="black",
     font=("Helvetica", 18),
+    wrap="word", # char (default), word, none
 )
 my_text.pack(pady=20)
 
