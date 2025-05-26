@@ -32,7 +32,8 @@ def switcher():
 # Create toggle function
 def clicker():
     # my_switch.deselect()
-    my_switch.select()
+    # my_switch.select()
+    my_switch.toggle()
     
 
 # Create a StringVar
