@@ -36,6 +36,7 @@ my_tab = customtkinter.CTkTabview(root,
     segmented_button_selected_hover_color="pink",
     segmented_button_unselected_hover_color="purple",
     segmented_button_unselected_color="yellow",
+    text_color="red",
 )
 my_tab.pack(pady=10)
 
