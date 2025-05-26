@@ -25,4 +25,20 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+# Create funtion
+def switcher():
+    pass
+
+# Create a StringVar
+switch_var = customtkinter.StringVar(value="on")
+# Create Switch
+my_switch = customtkinter.CTkSwitch(root, 
+    text="Switch", 
+    command=switcher,
+    variable=switch_var,
+    onvalue="on",
+    offvalue="off",
+)
+my_switch.pack(pady=40)
+
 root.mainloop()
