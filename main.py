@@ -41,7 +41,10 @@ def paste():
         my_text.insert('end', 'There is nothing to paste!')
 
 
-my_text = customtkinter.CTkTextbox(root)
+my_text = customtkinter.CTkTextbox(root,
+    width=600,
+    height=200,                                   
+)
 my_text.pack(pady=20)
 
 my_fame = customtkinter.CTkFrame(root)
