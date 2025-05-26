@@ -25,34 +25,4 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
-# Funtion
-def sliding(value):
-    my_label.configure(text=int(value))
-
-
-my_slider = customtkinter.CTkSlider(root, 
-    from_=0,
-    to=100,
-    command=sliding,
-    orientation="horizontal",
-    number_of_steps=10,
-    width=400,
-    height=50,
-    # border_width=10,
-    fg_color="red",
-    progress_color="green",
-    button_color="yellow",
-    button_hover_color="orange",
-    state="normal",
-    hover=False,
-)
-my_slider.pack(pady=40)
-
-# Define starting point
-my_slider.set(0)
-
-my_label = customtkinter.CTkLabel(root, text=my_slider.get(), font=("Helvetica", 18))
-my_label.pack(pady=20)
-
-
 root.mainloop()
