@@ -29,5 +29,9 @@ else:
 my_tab = customtkinter.CTkTabview(root, )
 my_tab.pack(pady=10)
 
+# Create tabs
+tab_1 = my_tab.add("Tab 1")
+tab_2 = my_tab.add("Tab 2")
+
 
 root.mainloop()
