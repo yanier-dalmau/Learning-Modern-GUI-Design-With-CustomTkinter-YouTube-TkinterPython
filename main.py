@@ -30,7 +30,8 @@ my_tab = customtkinter.CTkTabview(root,
     width=600,
     height=250,
     corner_radius=10,
-    fg_color="silver",                                  
+    fg_color="silver",
+    segmented_button_fg_color="red",                                  
 )
 my_tab.pack(pady=10)
 
