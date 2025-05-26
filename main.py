@@ -27,7 +27,7 @@ else:
 
 # Create funtion
 def switcher():
-    pass
+    my_label.configure(text=switch_var.get())
 
 # Create a StringVar
 switch_var = customtkinter.StringVar(value="on")
@@ -40,5 +40,9 @@ my_switch = customtkinter.CTkSwitch(root,
     offvalue="off",
 )
 my_switch.pack(pady=40)
+
+# Create a label
+my_label = customtkinter.CTkLabel(root, text="")
+my_label.pack(pady=10)
 
 root.mainloop()
