@@ -48,7 +48,7 @@ copy_button = customtkinter.CTkButton(my_fame, text="Copy", command=copy)
 paste_button = customtkinter.CTkButton(my_fame, text="Paste", command=paste)
 
 delete_button.grid(row=0, column=0)
-copy_button.grid(row=0, column=1)
+copy_button.grid(row=0, column=1, padx=10)
 paste_button.grid(row=0, column=2)
 
 
