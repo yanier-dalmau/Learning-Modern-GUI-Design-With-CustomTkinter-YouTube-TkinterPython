@@ -25,4 +25,8 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+
+my_text = customtkinter.CTkTextbox(root)
+my_text.pack(pady=20)
+
 root.mainloop()
