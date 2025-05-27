@@ -35,6 +35,7 @@ def input():
         button_hover_color="pink",
         button_text_color="black",
         entry_fg_color="green",
+        entry_border_color="red",
 )
     thing = dialog.get_input()
     if thing:
