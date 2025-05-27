@@ -25,4 +25,17 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+# Create a Function
+def input():
+    dialog = customtkinter.CTkInputDialog(text="What is your name?", title="Hello There!")
+
+# Create a Button
+my_button = customtkinter.CTkButton(root, text="Click Me!", command=input)
+my_button.pack(pady=40)
+
+# Create a Label
+my_label = customtkinter.CTkLabel(root, text='')
+my_label.pack(pady=10)
+
 root.mainloop()
+
