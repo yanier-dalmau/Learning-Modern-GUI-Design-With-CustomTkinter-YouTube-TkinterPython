@@ -27,7 +27,7 @@ else:
 
 
 def change():
-    my_font.configure(underline=False, overstrike=False)
+    my_font.configure(underline=False, overstrike=False, size=22)
 
 
 my_font = customtkinter.CTkFont(family="Helvetica", 
