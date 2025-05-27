@@ -25,6 +25,11 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+
+def change():
+    my_font.configure(underline=False, overstrike=False)
+
+
 my_font = customtkinter.CTkFont(family="Helvetica", 
     size=44,
     weight="bold",  # bold/normal
@@ -35,5 +40,8 @@ my_font = customtkinter.CTkFont(family="Helvetica",
 
 my_label = customtkinter.CTkLabel(root, text="This is Text", font=my_font)
 my_label.pack(pady=40)
+
+my_button = customtkinter.CTkButton(root, text="Change text", command=change)
+my_button.pack(pady=10)
 
 root.mainloop()
