@@ -29,7 +29,8 @@ else:
 
 my_image = customtkinter.CTkImage(
     light_image=Image.open('images/little_bird.png'),
-    dark_image=Image.open('images/little_bird.png')
+    dark_image=Image.open('images/little_bird.png'),
+    size=(360,500), # width x height
 )
 
 my_label = customtkinter.CTkLabel(root, text="", image=my_image)
