@@ -28,6 +28,11 @@ else:
 # Create a Function
 def input():
     dialog = customtkinter.CTkInputDialog(text="What is your name?", title="Hello There!")
+    thing = dialog.get_input()
+    if thing:
+        my_label.configure(text=f"Hello {thing}")
+    else:
+        my_label.configure(text=f"Yout Forgot To Type Anything!")
 
 # Create a Button
 my_button = customtkinter.CTkButton(root, text="Click Me!", command=input)
