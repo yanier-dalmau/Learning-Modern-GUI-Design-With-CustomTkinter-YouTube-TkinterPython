@@ -31,6 +31,7 @@ def input():
         text="What is your name?", 
         title="Hello There!",
         fg_color="white",
+        button_fg_color="red",
 )
     thing = dialog.get_input()
     if thing:
