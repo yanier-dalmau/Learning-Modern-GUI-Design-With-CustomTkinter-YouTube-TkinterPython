@@ -25,25 +25,4 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
-
-def new():
-    new_window = customtkinter.CTkToplevel(root,
-        fg_color="white",
-    )
-    new_window.title("This is a new window!")
-    new_window.geometry("400x200")
-    new_window.resizable(False, True) # width, height
-
-    def close():
-        new_window.destroy()
-        new_window.update()
-    
-    # Close the windows
-    new_button = customtkinter.CTkButton(new_window, text="Close Window", command=close)
-    new_button.pack(pady=40)
-
-
-my_button = customtkinter.CTkButton(root, text="Open New Window", command=new)
-my_button.pack(pady=40)
-
 root.mainloop()
