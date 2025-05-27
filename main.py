@@ -32,6 +32,7 @@ def input():
         title="Hello There!",
         fg_color="white",
         button_fg_color="red",
+        button_hover_color="pink",
 )
     thing = dialog.get_input()
     if thing:
