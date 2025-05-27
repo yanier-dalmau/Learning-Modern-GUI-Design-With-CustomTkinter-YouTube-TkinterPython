@@ -27,7 +27,9 @@ else:
 
 
 def new():
-    new_window = customtkinter.CTkToplevel(root)
+    new_window = customtkinter.CTkToplevel(root,
+        fg_color="white",
+    )
     new_window.title("This is a new window!")
     new_window.geometry("400x200")
     new_window.resizable(False, True) # width, height
