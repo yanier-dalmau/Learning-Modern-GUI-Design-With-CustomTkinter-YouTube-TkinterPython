@@ -27,7 +27,11 @@ else:
 
 # Create a Function
 def input():
-    dialog = customtkinter.CTkInputDialog(text="What is your name?", title="Hello There!")
+    dialog = customtkinter.CTkInputDialog(
+        text="What is your name?", 
+        title="Hello There!",
+        fg_color="white",
+)
     thing = dialog.get_input()
     if thing:
         my_label.configure(text=f"Hello {thing}")
