@@ -25,4 +25,15 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+my_font = customtkinter.CTkFont(family="Helvetica", 
+    size=44,
+    weight="bold",  # bold/normal
+    slant="italic",   # italic/roman
+    underline=True,
+    overstrike=True,
+)
+
+my_label = customtkinter.CTkLabel(root, text="This is Text", font=my_font)
+my_label.pack(pady=40)
+
 root.mainloop()
