@@ -25,4 +25,14 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
+
+def new():
+    new_window = customtkinter.CTkToplevel(root)
+    new_window.title("This is a new window!")
+    new_window.geometry("400x200")
+
+
+my_button = customtkinter.CTkButton(root, text="Open New Window", command=new)
+my_button.pack(pady=40)
+
 root.mainloop()
