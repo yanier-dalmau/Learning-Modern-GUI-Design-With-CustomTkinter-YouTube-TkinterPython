@@ -24,50 +24,5 @@ else:
         )
     )  # Usar icono PNG en otros sistemas operativos
 
-thing = ''
-
-# Functions
-def delete():
-    my_text.delete(0.0, 'end')
-
-def copy():
-    global thing
-    thing = my_text.get(0.0, 'end')
-
-def paste():
-    if thing:
-        my_text.insert('end', thing)
-    else:
-        my_text.insert('end', 'There is nothing to paste!')
-
-
-my_text = customtkinter.CTkTextbox(root,
-    width=600,
-    height=200,
-    corner_radius=20,
-    border_width=10,
-    border_color="#003660",
-    border_spacing=20,
-    fg_color="silver",
-    text_color="black",
-    font=("Helvetica", 18),
-    wrap="word", # char (default), word, none
-    activate_scrollbars=True,
-    scrollbar_button_color="#003660",
-    scrollbar_button_hover_color="red",
-)
-my_text.pack(pady=20)
-
-my_fame = customtkinter.CTkFrame(root)
-my_fame.pack(pady=10)
-
-delete_button = customtkinter.CTkButton(my_fame, text="Delete", command=delete)
-copy_button = customtkinter.CTkButton(my_fame, text="Copy", command=copy)
-paste_button = customtkinter.CTkButton(my_fame, text="Paste", command=paste)
-
-delete_button.grid(row=0, column=0)
-copy_button.grid(row=0, column=1, padx=10)
-paste_button.grid(row=0, column=2)
-
 
 root.mainloop()
