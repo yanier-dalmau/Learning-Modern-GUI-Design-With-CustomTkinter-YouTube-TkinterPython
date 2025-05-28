@@ -2,7 +2,6 @@ import os
 import platform
 from tkinter import *
 import customtkinter
-from PIL import Image
 
 # Set the theme and color options
 customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
@@ -24,17 +23,6 @@ else:
             'codemy.png')
         )
     )  # Usar icono PNG en otros sistemas operativos
-
-
-
-my_image = customtkinter.CTkImage(
-    light_image=Image.open('images/little_bird.png'),
-    dark_image=Image.open('images/little_bird.png'),
-    size=(180,250), # width x height
-)
-
-my_label = customtkinter.CTkLabel(root, text="", image=my_image)
-my_label.pack(pady=10)
 
 
 root.mainloop()
