@@ -40,10 +40,14 @@ def yellow():
 colors = ["Red", "Green", "Blue"]
 
 # Create OptionMenu
-my_option = customtkinter.CTkComboBox(
+my_option = customtkinter.CTkOptionMenu(
     root, 
     values=colors,
     # command=color_picker,
+    height=50,
+    width=200,
+    font=("Helvetica", 18),
+    fg_color="white",
 )
 my_option.pack(pady=40)
 
