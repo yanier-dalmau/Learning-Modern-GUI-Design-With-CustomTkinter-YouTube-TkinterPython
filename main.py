@@ -4,7 +4,7 @@ from tkinter import *
 import customtkinter
 
 # Set the theme and color options
-customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
+customtkinter.set_appearance_mode("dark")  # Modes: system (default), light, dark
 customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), dark-blue, green
 
 root = customtkinter.CTk()
@@ -27,7 +27,7 @@ else:
 
 
 def change():
-    pass
+    customtkinter.set_appearance_mode("light")
 
 
 my_text = customtkinter.CTkTextbox(root, width=600, height=300)
