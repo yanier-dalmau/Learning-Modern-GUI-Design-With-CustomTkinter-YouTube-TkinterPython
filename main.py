@@ -10,7 +10,7 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), da
 root = customtkinter.CTk()
 
 root.title('Tkinter.com - Custom Tkinter Buttons')
-root.geometry('700x450')
+root.geometry('700x500')
 
 # Verificar el sistema operativo
 if platform.system() == 'Windows':
@@ -23,6 +23,7 @@ else:
             'codemy.png')
         )
     )  # Usar icono PNG en otros sistemas operativos
+
 
 
 mode = "dark"
@@ -42,10 +43,18 @@ def change():
         my_text.insert(END, "This is Dark Mode...")
 
 
+def change_colors(choice):
+    customtkinter.set_default_color_theme(choice)
+
+
 my_text = customtkinter.CTkTextbox(root, width=600, height=300)
 my_text.pack(pady=20)
 
 my_button = customtkinter.CTkButton(root, text="Change Light/Dark", command=change)
 my_button.pack(pady=20)
+
+colors = ["blue", "dark-blue", "green"]
+my_option = customtkinter.CTkOptionMenu(root, values=colors, command=change_colors)
+my_option.pack(pady=10)
 
 root.mainloop()
