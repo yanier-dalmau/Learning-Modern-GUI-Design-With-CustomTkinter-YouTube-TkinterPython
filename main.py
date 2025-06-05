@@ -32,6 +32,9 @@ def color_picker(choice):
 def color_picker2():
     my_label.configure(text=my_option.get(), text_color=my_option.get())
 
+def yellow():
+    my_option.set("Yellow")
+    my_label.configure(text=my_option.get(), text_color=my_option.get())
 
 # Set the options for our OptionMenu
 colors = ["Red", "Green", "Blue"]
@@ -49,5 +52,8 @@ my_label.pack(pady=10)
 
 pick_button = customtkinter.CTkButton(root, text="Make Choice", command=color_picker2)
 pick_button.pack(pady=10)
+
+yellow_button = customtkinter.CTkButton(root, text="Pick Yellow", command=yellow)
+yellow_button.pack(pady=10)
 
 root.mainloop()
