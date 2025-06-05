@@ -48,6 +48,19 @@ my_option = customtkinter.CTkOptionMenu(
     width=200,
     font=("Helvetica", 18),
     fg_color="white",
+    corner_radius=50,
+    button_color="red",
+    button_hover_color="green",
+    dropdown_font=("Helvetica", 18),
+    dropdown_hover_color="green",
+    dropdown_fg_color="blue",
+    dropdown_text_color="orange",
+    text_color="red",
+    hover=True,
+    anchor="center",
+    state="normal",
+    text_color_disabled="black",
+    dynamic_resizing=False,
 )
 my_option.pack(pady=40)
 
