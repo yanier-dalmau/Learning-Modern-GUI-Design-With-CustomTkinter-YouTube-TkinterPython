@@ -24,5 +24,11 @@ else:
         )
     )  # Usar icono PNG en otros sistemas operativos
 
+# Set the options for our OptionMenu
+colors = ["Red", "Green", "Blue"]
+
+# Create OptionMenu
+my_option = customtkinter.CTkOptionMenu(root, values=colors)
+my_option.pack(pady=40)
 
 root.mainloop()
