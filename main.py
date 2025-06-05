@@ -25,9 +25,15 @@ else:
     )  # Usar icono PNG en otros sistemas operativos
 
 
-
+mode = "dark"
 def change():
-    customtkinter.set_appearance_mode("light")
+    global mode
+    if mode == "dark":
+        customtkinter.set_appearance_mode("light")
+        mode = "light"
+    else:
+        customtkinter.set_appearance_mode("dark")
+        mode = "dark"
 
 
 my_text = customtkinter.CTkTextbox(root, width=600, height=300)
