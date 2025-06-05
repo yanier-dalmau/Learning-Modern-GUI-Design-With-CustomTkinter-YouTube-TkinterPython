@@ -31,9 +31,15 @@ def change():
     if mode == "dark":
         customtkinter.set_appearance_mode("light")
         mode = "light"
+        # Clear text box
+        my_text.delete(0.0, END)
+        my_text.insert(END, "This is Light Mode...")
     else:
         customtkinter.set_appearance_mode("dark")
         mode = "dark"
+        # Clear text box
+        my_text.delete(0.0, END)
+        my_text.insert(END, "This is Dark Mode...")
 
 
 my_text = customtkinter.CTkTextbox(root, width=600, height=300)
