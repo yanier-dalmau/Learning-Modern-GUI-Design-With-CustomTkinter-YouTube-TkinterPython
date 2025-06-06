@@ -57,4 +57,7 @@ colors = ["blue", "dark-blue", "green"]
 my_option = customtkinter.CTkOptionMenu(root, values=colors, command=change_colors)
 my_option.pack(pady=10)
 
+my_progress = customtkinter.CTkProgressBar(root, orientation="horizontal", )
+my_progress.pack(pady=20)
+
 root.mainloop()
