@@ -10,7 +10,7 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), da
 root = customtkinter.CTk()
 
 root.title('Tkinter.com - Custom Tkinter Buttons')
-root.geometry('700x350')
+root.geometry('700x450')
 
 # Verificar el sistema operativo
 if platform.system() == 'Windows':
@@ -24,5 +24,16 @@ else:
         )
     )  # Usar icono PNG en otros sistemas operativos
 
+
+
+def clear():
+    my_text.delete('0.0', END)
+
+
+my_text = customtkinter.CTkTextbox(root, width=600, height=300)
+my_text.pack(pady=20)
+
+my_button = customtkinter.CTkButton(root, text="Clear Box", command=clear)
+my_button.pack(pady=20)
 
 root.mainloop()
