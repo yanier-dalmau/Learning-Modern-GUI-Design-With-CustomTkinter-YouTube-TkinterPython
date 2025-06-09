@@ -10,7 +10,7 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), da
 root = customtkinter.CTk()
 
 root.title('Tkinter.com - Custom Tkinter Buttons')
-root.geometry('700x350')
+root.geometry('700x450')
 
 # Verificar el sistema operativo
 if platform.system() == 'Windows':
@@ -24,5 +24,28 @@ else:
         )
     )  # Usar icono PNG en otros sistemas operativos
 
+
+
+def up():
+    pass
+
+def down():
+    pass
+
+
+# Frame
+my_frame = customtkinter.CTkFrame(root)
+my_frame.pack(pady=20)
+
+# Buttons
+up_button = customtkinter.CTkButton(my_frame, text="Up", command=up)
+up_button.grid(row=0, column=0, padx=10)
+
+down_button = customtkinter.CTkButton(my_frame, text="Down", command=down)
+down_button.grid(row=0, column=1, padx=10)
+
+# Text Box
+my_text = customtkinter.CTkTextbox(root, width=400, height=200)
+my_text.place(x=700/2, y=450/2, anchor='center')
 
 root.mainloop()
