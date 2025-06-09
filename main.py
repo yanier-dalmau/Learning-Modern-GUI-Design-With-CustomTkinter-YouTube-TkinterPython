@@ -6,6 +6,8 @@ import customtkinter
 # Set the theme and color options
 customtkinter.set_appearance_mode("dark")  # Modes: system (default), light, dark
 customtkinter.set_default_color_theme("themes/red.json")  # Themes: blue (default), dark-blue, green
+# Turn off scaling
+customtkinter.deactivate_automatic_dpi_awareness()
 
 root = customtkinter.CTk()
 
