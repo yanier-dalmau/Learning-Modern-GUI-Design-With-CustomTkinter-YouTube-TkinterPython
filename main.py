@@ -58,7 +58,10 @@ down_button = customtkinter.CTkButton(my_frame, text="Down", command=down)
 down_button.grid(row=0, column=1, padx=10)
 
 # Text Box
-my_text = customtkinter.CTkTextbox(root, width=400, height=200)
+my_text = customtkinter.CTkFrame(root, width=400, height=200, fg_color="white")
 my_text.place(x=700/2, y=my_y, anchor='center')
+
+some_text = customtkinter.CTkLabel(my_text, text="HELLO WORLD!", font=("Helvetica", 24))
+some_text.pack(pady=40)
 
 root.mainloop()
