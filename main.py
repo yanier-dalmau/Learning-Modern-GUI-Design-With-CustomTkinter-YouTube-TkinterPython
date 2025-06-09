@@ -26,8 +26,13 @@ else:
 
 
 
+global my_y
+my_y = 450/2 + 350
+
 def up():
-    pass
+    global my_y
+    my_y -= 20
+    my_text.place(x=700/2, y=my_y, anchor='center')
 
 def down():
     pass
@@ -46,6 +51,6 @@ down_button.grid(row=0, column=1, padx=10)
 
 # Text Box
 my_text = customtkinter.CTkTextbox(root, width=400, height=200)
-my_text.place(x=700/2, y=450/2, anchor='center')
+my_text.place(x=700/2, y=my_y, anchor='center')
 
 root.mainloop()
