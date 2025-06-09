@@ -10,6 +10,8 @@ customtkinter.set_default_color_theme("themes/red.json")  # Themes: blue (defaul
 customtkinter.deactivate_automatic_dpi_awareness()
 # Scale Windows
 customtkinter.set_window_scaling(1.5)
+# Scale Widgets
+customtkinter.set_widget_scaling(1.5)
 
 root = customtkinter.CTk()
 
