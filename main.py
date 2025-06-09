@@ -35,9 +35,15 @@ def up():
     if my_y >= 195:
         my_text.place(x=700/2, y=my_y, anchor='center')
         up_button.configure(text=my_y)
+        root.after(10, up)
 
 def down():
-    pass
+    global my_y
+    my_y += 20
+    if my_y <= 750:
+        my_text.place(x=700/2, y=my_y, anchor='center')
+        up_button.configure(text=my_y)
+        root.after(10, down)
 
 
 # Frame
