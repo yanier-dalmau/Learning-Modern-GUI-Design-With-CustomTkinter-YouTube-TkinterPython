@@ -33,6 +33,7 @@ def up():
     global my_y
     my_y -= 20
     my_text.place(x=700/2, y=my_y, anchor='center')
+    up_button.configure(text=my_y)
 
 def down():
     pass
